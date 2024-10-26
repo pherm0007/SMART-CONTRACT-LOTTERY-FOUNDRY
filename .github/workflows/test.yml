@@ -24,6 +24,8 @@ jobs:
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+      - name: Install Foundry
+        run: curl -L https://foundry.paradigm.xyz | bash
 
       - name: Show Forge version
         run: |
